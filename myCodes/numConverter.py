@@ -15,7 +15,7 @@ def hex2dec(fromNum, fromBase, toBase):
     toNum = 0
     rev_fromNum = fromNum[::-1]
     for i in range(len(rev_fromNum)):
-        toNum += hexaDec[rev_fromNum[i]]*fromBase**i
+        toNum += hexaDec[rev_fromNum[i].upper()]*fromBase**i
     return toNum
 
 
